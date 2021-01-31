@@ -1,17 +1,23 @@
 "use strict";
 
-const obj={
-    name:"John",
-    age:12
+const numberOfFilms=prompt('Сколько фильмов вы уже посмотрели?','');
+document.write(numberOfFilms);
+
+const personalMovieDB={
+    count:numberOfFilms,
+    movies:{},
+    actors:{},
+    genres:[],
+    privat:false
 };
 
-let arr= ['as.png', obj, 123];
+const nameOfFilm=prompt('Один из последних фильмов?',''),
+      rate=prompt('Насколько оцените его?',''),
+      nameOfFilm2=prompt('Один из последних фильмов?',''),
+      rate2=prompt('Насколько оцените его?','');
 
-console.log(arr[1]['name']);
 
-prompt('Choose your destiny!');
+      personalMovieDB.movies[nameOfFilm]=rate;
+      personalMovieDB.movies[nameOfFilm2]=rate2;
 
-console.log(typeof(NaN));
-
-console.log(22%3);
-
+      console.log(personalMovieDB);
