@@ -13,3 +13,5 @@ console.log(prompt('Choose your destiny!'));
 
 console.log(typeof(NaN));
 
+console.log(22%3);
+
