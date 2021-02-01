@@ -68,11 +68,48 @@ function rememberMyFilms(){
     }
     
     
-    start();  
-    rememberMyFilms();
-    rateOfViewer();
-    writeYourGenres();
-    showMyDB(personalMovieDB);
+    // start();  
+    // rememberMyFilms();
+    // rateOfViewer();
+    // writeYourGenres();
+    // showMyDB(personalMovieDB);
+
+    // function showSome(string,callback){
+    //     console.log(`I am can eat ${string}`);
+    //     callback();
+    // }
+
+    // showSome('Pamador',function(){
+    //     console.log('Beach!');
+    // });
+
+    let options={
+        stat:'man',
+        age:23,
+        weight:57,
+        height:155,
+        scin:{
+            color:'black',
+            tverd:'medium'
+        }
+    };
+
+    const{color,tverd}=options.scin;
+    console.log(tverd);
+
+    // for(let item in options){
+    //     if(typeof(options[item])==='object'){
+    //         for(let i in options[item]){
+    //             console.log(`Object ${i} properties: ${options[item][i]}`);
+    //         }
+    //     }
+    //     else{
+    //         console.log(`Object ${item} properties: ${options[item]}`);
+    //     }
+        
+    // }
+
+    console.log(Object.keys(options));
     
 
 
